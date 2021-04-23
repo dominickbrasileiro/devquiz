@@ -1,8 +1,16 @@
-import 'package:devquiz/core/core.dart';
-import 'package:devquiz/home/widgets/chart/chart_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'package:devquiz/core/core.dart';
+import 'package:devquiz/home/widgets/chart/chart_widget.dart';
+
 class ScoreCardWidget extends StatelessWidget {
+  final double percent;
+
+  const ScoreCardWidget({
+    Key? key,
+    required this.percent,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,22 +26,24 @@ class ScoreCardWidget extends StatelessWidget {
           children: [
             Expanded(
               flex: 2,
-              child: ChartWidget(),
+              child: ChartWidget(
+                percent: percent,
+              ),
             ),
             Expanded(
               flex: 4,
               child: Padding(
-                padding: EdgeInsets.only(left: 8),
+                padding: EdgeInsets.only(left: 8, right: 24),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Vamos começar',
+                      'Bom resultado!',
                       style: AppTextStyles.heading,
                     ),
                     Text(
-                      'Complete os desafios e avance em conhecimento',
+                      'Seu conhecimento está sendo aprimorado :)',
                       style: AppTextStyles.body,
                     ),
                   ],

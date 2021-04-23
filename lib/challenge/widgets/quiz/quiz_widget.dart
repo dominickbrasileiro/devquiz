@@ -1,16 +1,20 @@
+import 'package:devquiz/common/models/answer_model.dart';
+import 'package:flutter/material.dart';
+
 import 'package:devquiz/challenge/widgets/answer/answer_widget.dart';
 import 'package:devquiz/common/models/question_model.dart';
 import 'package:devquiz/core/app_text_styles.dart';
-import 'package:flutter/material.dart';
 
 class QuizWidget extends StatefulWidget {
   final QuestionModel question;
   final VoidCallback onChange;
+  final VoidCallback onScore;
 
   const QuizWidget({
     Key? key,
     required this.question,
     required this.onChange,
+    required this.onScore,
   }) : super(key: key);
 
   @override
@@ -20,7 +24,7 @@ class QuizWidget extends StatefulWidget {
 class _QuizWidgetState extends State<QuizWidget> {
   int selectedIndex = -1;
 
-  getAnswerByIndex(int index) => widget.question.answers[index];
+  AnswerModel getAnswerByIndex(int index) => widget.question.answers[index];
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +44,10 @@ class _QuizWidgetState extends State<QuizWidget> {
               isSelected: i == selectedIndex,
               disabled: selectedIndex >= 0,
               onTap: () {
+                if (getAnswerByIndex(i).isCorrect) {
+                  widget.onScore();
+                }
+
                 setState(() {
                   selectedIndex = i;
                 });

@@ -1,16 +1,20 @@
+import 'package:flutter/material.dart';
+
 import 'package:devquiz/challenge/challenge_controller.dart';
 import 'package:devquiz/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:devquiz/challenge/widgets/question_indicator/question_indicator_widget.dart';
 import 'package:devquiz/challenge/widgets/quiz/quiz_widget.dart';
 import 'package:devquiz/common/models/question_model.dart';
-import 'package:flutter/material.dart';
+import 'package:devquiz/result/result_page.dart';
 
 class ChallengePage extends StatefulWidget {
   final List<QuestionModel> questions;
+  final String title;
 
   const ChallengePage({
     Key? key,
     required this.questions,
+    required this.title,
   }) : super(key: key);
 
   @override
@@ -72,6 +76,9 @@ class _ChallengePageState extends State<ChallengePage> {
               (question) => QuizWidget(
                 question: question,
                 onChange: nextPage,
+                onScore: () {
+                  controller.score++;
+                },
               ),
             )
             .toList(),
@@ -96,7 +103,13 @@ class _ChallengePageState extends State<ChallengePage> {
                     child: NextButtonWidget.green(
                       label: 'Confirmar',
                       onPressed: () {
-                        Navigator.of(context).pop();
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (ctx) => ResultPage(
+                            title: widget.title,
+                            questionsNumber: widget.questions.length,
+                            score: controller.score,
+                          ),
+                        ));
                       },
                     ),
                   ),
