@@ -1,3 +1,4 @@
+import 'package:devquiz/challenge/challenge_page.dart';
 import 'package:devquiz/core/core.dart';
 import 'package:devquiz/home/home_state.dart';
 import 'package:devquiz/home/widgets/app_bar/app_bar_widget.dart';
@@ -64,7 +65,18 @@ class _HomePageState extends State<HomePage> {
                   crossAxisSpacing: 16,
                   children: controller.quizzes!
                       .map(
-                        (quiz) => QuizCardWidget(quiz: quiz),
+                        (quiz) => QuizCardWidget(
+                          quiz: quiz,
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (ctx) => ChallengePage(
+                                  questions: quiz.questions,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
                       )
                       .toList(),
                 ),
