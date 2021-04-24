@@ -5,7 +5,7 @@
 <p  align="center">
   <img  alt="Repository size"  src="https://img.shields.io/github/repo-size/dominickbrasileiro/devquiz?color=282A36&style=for-the-badge">
 
-  <a  href="https://github.com/LuanSilveiraSouza/ecosmmerce/commits/master">
+  <a  href="https://github.com/dominickbrasileiro/devquiz/commits/main">
     <img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/dominickbrasileiro/devquiz?color=282A36&style=for-the-badge">
   </a>
 
