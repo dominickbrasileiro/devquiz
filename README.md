@@ -9,6 +9,10 @@
     <img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/dominickbrasileiro/devquiz?color=282A36&style=for-the-badge">
   </a>
 
+  <a  href="https://github.com/dominickbrasileiro/devquiz/releases">
+    <img  alt="GitHub last release"  src="https://img.shields.io/github/release/dominickbrasileiro/devquiz?color=282A36&style=for-the-badge">
+  </a>
+
   <img  alt="License"  src="https://img.shields.io/badge/license-MIT-282A36?&style=for-the-badge">
 </p>
 
