@@ -38,7 +38,7 @@ You can find the application UI design here: [Figma](https://www.figma.com/file/
 You'll need [Flutter](https://flutter.dev) set up on your computer to build this app.
 
 ```bash
-git clone https://github.com/dominickbrasileiro/devquiz.git
+$ git clone https://github.com/dominickbrasileiro/devquiz.git
 $ cd devquiz
 $ flutter pub get
 $ flutter run
