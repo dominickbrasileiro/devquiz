@@ -1,16 +1,50 @@
-# devquiz
+<h2 align="center">
+  🔷 DevQuiz 🔷
+</h2>
 
-A new Flutter project.
+<br />
 
-## Getting Started
+<p align="center">
+  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-run">How To Run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
+</p>
 
-This project is a starting point for a Flutter application.
+<br />
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img alt="Screenshots" src=".github/main.png" width="100%">
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 📕 About
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Quiz App developed using Flutter for study purposes. This project was promoted by Rocketseat during the Next Level Week #5.
+
+## 🛠️ Layout
+
+You can find the application UI design here: [Figma](https://www.figma.com/file/Kn4qyLRDE9WWlyJ3CAQrmp/DevQuiz---Dominick-Brasileiro)
+
+## ℹ️ How To Run
+
+You'll need [Flutter](https://flutter.dev) set up on your computer to build this app.
+
+```bash
+git clone https://github.com/dominickbrasileiro/devquiz.git
+$ cd devquiz
+$ flutter pub get
+$ flutter run
+```
+
+Runs the app in the development mode.
+
+## 📝 License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/dominickbrasileiro/devquiz/blob/main/LICENSE) for more information.
+
+---
+
+Made with ❤️ by Dominick Brasileiro 💎 [Get in touch!](https://www.linkedin.com/in/dominickbrasileiro/)
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dominickbrasileiro/)](https://www.linkedin.com/in/dominickbrasileiro/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:brasileiro.dominick@gmail.com)](mailto:brasileiro.dominick@gmail.com)
