@@ -94,14 +94,14 @@ class _ChallengePageState extends State<ChallengePage> {
                 if (value < widget.questions.length - 1)
                   Expanded(
                     child: NextButtonWidget.white(
-                      label: 'Pular',
+                      label: 'Skip',
                       onPressed: nextPage,
                     ),
                   ),
                 if (value == widget.questions.length - 1)
                   Expanded(
                     child: NextButtonWidget.green(
-                      label: 'Confirmar',
+                      label: 'Confirm',
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
                           builder: (ctx) => ResultPage(

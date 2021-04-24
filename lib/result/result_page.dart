@@ -31,12 +31,13 @@ class ResultPage extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'Parabéns!',
+                  'Congratulations!',
                   style: AppTextStyles.heading40,
                 ),
+                SizedBox(height: 10),
                 Text.rich(
                   TextSpan(
-                    text: 'Você concluiu',
+                    text: 'You finished',
                     style: AppTextStyles.body,
                     children: [
                       TextSpan(
@@ -44,7 +45,7 @@ class ResultPage extends StatelessWidget {
                         style: AppTextStyles.bodyBold,
                       ),
                       TextSpan(
-                        text: 'com $score de $questionsNumber acertos.',
+                        text: 'with $score of $questionsNumber marks.',
                         style: AppTextStyles.body,
                       ),
                     ],
@@ -61,7 +62,7 @@ class ResultPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: NextButtonWidget.purple(
-                          label: 'Compartilhar',
+                          label: 'Share',
                           onPressed: () {
                             Share.share(
                               'DevQuiz! https://github.com/dominickbrasileiro/devquiz',
@@ -78,7 +79,7 @@ class ResultPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: NextButtonWidget.transparent(
-                          label: 'Voltar ao Início',
+                          label: 'Back to Home',
                           onPressed: () {
                             Navigator.of(context).pushReplacement(
                               MaterialPageRoute(

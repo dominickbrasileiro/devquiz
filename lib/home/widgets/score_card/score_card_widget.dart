@@ -39,11 +39,11 @@ class ScoreCardWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Bom resultado!',
+                      'Nice!',
                       style: AppTextStyles.heading,
                     ),
                     Text(
-                      'Seu conhecimento está sendo aprimorado :)',
+                      'You are getting better, well done! :)',
                       style: AppTextStyles.body,
                     ),
                   ],

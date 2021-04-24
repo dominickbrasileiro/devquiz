@@ -45,7 +45,7 @@ class QuizCardWidget extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Text(
-                    '${quiz.questionsAnswered} de ${quiz.questions.length}',
+                    '${quiz.questionsAnswered} of ${quiz.questions.length}',
                     style: AppTextStyles.body11,
                   ),
                 ),

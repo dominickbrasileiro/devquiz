@@ -23,11 +23,11 @@ class QuestionIndicatorWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Questão ${currentQuestion.toString().padLeft(2, '0')}',
+                'Question ${currentQuestion.toString().padLeft(2, '0')}',
                 style: AppTextStyles.body,
               ),
               Text(
-                'de ${maxQuestions.toString().padLeft(2, '0')}',
+                'of ${maxQuestions.toString().padLeft(2, '0')}',
                 style: AppTextStyles.body,
               ),
             ],
